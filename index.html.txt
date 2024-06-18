@@ -1,0 +1,22 @@
+<html>
+   <head> 
+      <script>
+          proceed=function(){
+          var name=document.getElementById("fname").value;
+          console.log(name);
+           }
+      </script>
+   </head>
+  <body>
+      <h3 style="text-align:center;color:red">Candidate Information</h3>
+      <div>
+          <label>Name:</label>
+          <input type="text" maxlength="12" id="fname" name="fname"/></br></br>
+          <label>Password:</label>
+          <input type="password" id="pass" name="pass"/></br></br>
+          <input type="submit" value="click to proceed" onclick=proceed() />
+       
+      </div>
+       
+   </body>
+</html>
