@@ -29,7 +29,7 @@ pipeline
             {
                 script
                 {
-                    sh'scp /var/lib/jenkins/workspace/dev01P/webapp/target/webapp.war ubuntu@172.31.88.174:/var/lib/tomcat9/webapps/test1.war'
+                    sh'scp /var/lib/jenkins/workspace/dev01P/webapp/target/webapp.war ubuntu@172.31.88.174:/var/lib/tomcat9/webapps/testapp.war'
                 }
             }
         }
@@ -60,7 +60,7 @@ pipeline
                 {
                     try
                     {
-                        sh'scp /var/lib/jenkins/workspace/dev01P/webapp/target/webapp.war ubuntu@172.31.85.183://var/lib/tomcat9/webapps/prod11.war'
+                        sh'scp /var/lib/jenkins/workspace/dev01P/webapp/target/webapp.war ubuntu@172.31.85.183://var/lib/tomcat9/webapps/prodapp.war'
                         
                     }
                     catch(Exception e)
